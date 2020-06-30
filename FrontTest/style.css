@@ -1,0 +1,766 @@
+button {
+  outline: none;
+}
+
+header .head .start-menu .logo-name .btn-dots, .content-width .btn-dots {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .head .start-menu .logo-name .btn-dots .dot, .content-width .btn-dots .dot {
+  box-sizing: border-box;
+  min-width: 4px;
+  min-height: 4px;
+  margin: 0 1px;
+  border-radius: 50%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.user-info {
+  padding: 0;
+  width: 270px;
+  height: 100vh;
+  background-color: black;
+  float: left;
+  position: fixed;
+  z-index: 2;
+}
+
+.about-user {
+  height: 80px;
+  background-color: #202020;
+}
+
+.flex-about-user {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-width {
+  padding: 0 16px 0 30px;
+}
+.content-width .side-logo {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-width .side-logo .side-title {
+  display: flex;
+  align-items: center;
+}
+.content-width .side-logo .side-title img {
+  width: 22px;
+  height: 19px;
+}
+.content-width .side-logo .side-title h3 {
+  margin: 0 0 0 13px;
+  color: #FFFFFF;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.content-width .side-logo .search img {
+  width: 16px;
+  height: 16px;
+}
+.content-width .user-name-photo {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.content-width .user-name-photo img {
+  width: 48px;
+  height: 48px;
+}
+.content-width .user-name-photo .user-name-text {
+  margin-left: 15px;
+}
+.content-width .user-name-photo .user-name-text #name {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.content-width .user-name-photo .user-name-text #job {
+  color: #9B9B9B;
+  font-size: 12px;
+}
+.content-width .btn-dots {
+  background-color: inherit;
+}
+.content-width .btn-dots .dot {
+  background-color: #D8D8D8;
+}
+.content-width .user-tasks {
+  margin: 20px 0;
+  display: flex;
+}
+.content-width .user-tasks .completed-tasks {
+  margin-right: 19px;
+}
+.content-width .user-tasks .tasks-numbers {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.content-width .user-tasks .about-tasks {
+  font-size: 12px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.content-width .side-navbar li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+.content-width .side-navbar li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content-width .side-navbar li span {
+  font-size: 13px;
+  width: 20px;
+  height: 19px;
+  padding: 1px 5px;
+  border-radius: 50%;
+  background-color: #FFC200;
+  margin-left: 9.3px;
+  color: #131313;
+}
+.content-width .side-navbar .item-menu {
+  text-transform: uppercase;
+}
+.content-width .side-navbar .item-menu a {
+  font-size: 12px;
+  color: #878787;
+  line-height: 18px;
+}
+
+header {
+  width: 100%;
+  height: 136px;
+  padding: 0;
+  position: fixed;
+  background-color: #FFFFFF;
+}
+header .head {
+  margin-left: 265px;
+  padding: 39.5px 30px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .head .start-menu .logo-name {
+  display: flex;
+  align-items: center;
+}
+header .head .start-menu .logo-name .head-burger {
+  display: none;
+}
+header .head .start-menu .logo-name img {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 10px;
+}
+header .head .start-menu .logo-name h1 {
+  padding: 0;
+  margin: 0 11px 0px 15px;
+  font-size: 32px;
+  color: #131313;
+  font-weight: 400;
+}
+header .head .start-menu .logo-name .btn-dots {
+  margin-right: 5px;
+  background-color: #EAEAEA;
+}
+header .head .start-menu .logo-name .btn-dots .dot {
+  background-color: #D8D8D8;
+}
+header .head .current-users {
+  display: flex;
+  align-items: center;
+}
+header .head .current-users .users {
+  display: flex;
+  list-style: none;
+}
+header .head .current-users .users li {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+header .head .current-users .users li img {
+  width: 30px;
+  height: 30px;
+}
+header .head .current-users .share {
+  width: 67px;
+  height: 30px;
+  background-color: #EAEAEA;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #131313;
+  font-size: 14px;
+  margin-left: 10px;
+}
+header .head .current-users .chat {
+  width: 81px;
+  height: 30px;
+  color: #FFC200;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #FFF3E2;
+  margin-left: 15px;
+}
+header .menu {
+  margin: 23px 0 14px 295px;
+}
+header .menu ul li {
+  display: inline;
+  margin-right: 25px;
+}
+header .menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #7C7B85;
+  padding-bottom: 14px;
+}
+header .menu ul li a.isFocused {
+  border-bottom: 2px solid #FFC200;
+  color: #131313;
+}
+
+.main-content {
+  height: 100%;
+  background-color: #F7F6F3;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 67px 20px 120px 20px;
+}
+.main-content .content-block {
+  box-sizing: border-box;
+  max-height: 800px;
+  width: 740px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin: 100px 0 0 270px;
+  box-sizing: border-box;
+  padding: 45px 20px 10px 30px;
+}
+.main-content .content-block .day {
+  font-size: 14px;
+  color: #a7a7a7;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.main-content .content-block .important-message {
+  box-sizing: border-box;
+  max-width: 551px;
+  max-height: 120px;
+  background-color: #F7F6F3;
+  padding: 20px 30px 20px 29px;
+  border-radius: 10px;
+  margin: 0 60px 30px 60px;
+}
+.main-content .content-block .message {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .content-block .message .message-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+}
+.main-content .content-block .message .message-content img {
+  background-color: #CEF9C6;
+  padding: 14px 13px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.main-content .content-block .message .message-content p {
+  font-size: 16px;
+  color: #131313;
+  line-height: 20px;
+}
+.main-content .content-block .message .time {
+  color: #a7a7a7;
+  font-size: 14px;
+  margin: 0 20px;
+}
+.main-content .content-block .message-one {
+  margin-bottom: 30px;
+}
+.main-content .content-block .message-two {
+  margin-bottom: 20px;
+}
+.main-content .content-block .message-three {
+  margin-bottom: 20px;
+}
+.main-content .content-block .text-message {
+  font-size: 16px;
+  color: #131313;
+}
+.main-content .city-images {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 0 77px 50px;
+}
+.main-content .city-images img {
+  margin: 0 0 10px 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+@media (min-width: 1200px) {
+  .main-content {
+    padding: 67px 20px 120px 20px;
+  }
+}
+@media (max-width: 992px) {
+  header .head .start-menu .logo-name h1 {
+    font-size: 28px;
+  }
+  header .menu {
+    margin: 10px 0 0 295px;
+  }
+  header .menu ul li {
+    margin-right: 20px;
+  }
+  header .menu ul li a {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  .main-content {
+    padding: 67px 20px 80px 20px;
+  }
+}
+@media (max-width: 864px) {
+  .main-content .content-block {
+    max-height: 800px;
+  }
+  .main-content .content-block .important-message {
+    padding: 10px 20px 10px 19px;
+  }
+  .main-content .city-images {
+    margin: 0 0 83px 0;
+  }
+  .main-content .city-images img {
+    margin: 0 0 10px 8px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 795px) {
+  .user-info {
+    width: 200px;
+  }
+
+  .about-user {
+    height: 80px;
+  }
+
+  .flex-about-user {
+    padding: 16px 0;
+  }
+
+  .content-width {
+    padding: 0 8px 0 15px;
+  }
+  .content-width .side-logo {
+    padding: 15px 0;
+  }
+  .content-width .side-logo .side-title img {
+    width: 18px;
+    height: 15px;
+  }
+  .content-width .side-logo .side-title h3 {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .content-width .side-logo .search img {
+    width: 14px;
+    height: 14px;
+  }
+  .content-width .user-name-photo {
+    margin-right: 0;
+  }
+  .content-width .user-name-photo img {
+    width: 40px;
+    height: 40px;
+  }
+  .content-width .user-name-photo .user-name-text {
+    margin-left: 8px;
+  }
+  .content-width .user-name-photo .user-name-text #name {
+    font-size: 13px;
+    margin-bottom: 2px;
+  }
+  .content-width .user-name-photo .user-name-text #job {
+    font-size: 11px;
+  }
+  .content-width .user-tasks .completed-tasks {
+    margin-right: 19px;
+  }
+  .content-width .user-tasks .tasks-numbers {
+    font-size: 17px;
+  }
+  .content-width .user-tasks .about-tasks {
+    font-size: 12px;
+  }
+
+  header {
+    height: 110px;
+  }
+  header .head {
+    margin-left: 200px;
+    padding: 25px 15px 0 15px;
+  }
+  header .head .start-menu .logo-name img {
+    width: 35px;
+    height: 35px;
+  }
+  header .head .start-menu .logo-name h1 {
+    margin: 0 8px 0px 15px;
+    font-size: 20px;
+  }
+  header .head .start-menu .logo-name .btn-dots {
+    width: 25px;
+    height: 25px;
+  }
+  header .head .current-users .users li {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  header .head .current-users .users li img {
+    width: 25px;
+    height: 25px;
+  }
+  header .head .current-users .share {
+    width: 57px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  header .head .current-users .chat {
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  header .menu {
+    margin: 18px 0 0 217px;
+  }
+  header .menu ul li {
+    margin-right: 20px;
+  }
+  header .menu ul li a {
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
+
+  .main-content {
+    padding: 20px 10px 80px 10px;
+  }
+  .main-content .content-block {
+    max-height: 800px;
+    margin-left: 200px;
+    padding: 25px 10px 30px 20px;
+  }
+  .main-content .content-block .day {
+    margin-bottom: 22px;
+  }
+  .main-content .content-block .important-message {
+    max-height: 120px;
+    padding: 10px 10px 10px 19px;
+  }
+  .main-content .content-block .message .message-content {
+    max-width: 500px;
+  }
+  .main-content .content-block .message .message-content p {
+    line-height: 18px;
+  }
+  .main-content .content-block .message-one {
+    margin-bottom: 25px;
+  }
+  .main-content .content-block .message-two {
+    margin-bottom: 15px;
+  }
+  .main-content .content-block .message-three {
+    margin-bottom: 15px;
+  }
+  .main-content .city-images {
+    margin: 0 0 33px 10px;
+  }
+  .main-content .city-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 620px) {
+  body.active {
+    overflow: hidden;
+  }
+
+  .user-info {
+    left: -100%;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+
+  .content-width {
+    padding: 0 16px 0 30px;
+  }
+  .content-width .side-logo {
+    height: 70px;
+  }
+  .content-width .side-logo .side-title img {
+    width: 30px;
+    height: 29px;
+  }
+  .content-width .side-logo .side-title h3 {
+    font-size: 18px;
+    margin: 0 0 0 15px;
+  }
+  .content-width .side-logo .side-title .btn-back {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(135deg);
+    margin-right: 5px;
+  }
+  .content-width .side-logo .search img {
+    width: 20px;
+    height: 20px;
+  }
+  .content-width .user-name-photo img {
+    width: 52px;
+    height: 52px;
+  }
+  .content-width .user-name-photo .user-name-text {
+    margin-left: 20px;
+  }
+  .content-width .user-name-photo .user-name-text #name {
+    font-size: 16px;
+  }
+  .content-width .user-name-photo .user-name-text #job {
+    font-size: 14px;
+  }
+  .content-width .user-tasks {
+    margin: 25px 0;
+  }
+  .content-width .user-tasks .tasks-numbers {
+    font-size: 24px;
+  }
+  .content-width .user-tasks .about-tasks {
+    font-size: 14px;
+  }
+  .content-width .side-navbar li {
+    margin-bottom: 10px;
+  }
+  .content-width .side-navbar li a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .content-width .side-navbar li span {
+    font-size: 14px;
+  }
+  .content-width .side-navbar .item-menu a {
+    font-size: 14px;
+  }
+
+  .user-info.active {
+    left: 0;
+  }
+
+  header {
+    height: 110px;
+  }
+  header .head {
+    margin-left: 0;
+    padding: 25px 15px 0 15px;
+  }
+  header .head .start-menu .logo-name .head-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-left: 6px;
+  }
+  header .head .start-menu .logo-name .head-burger span {
+    position: absolute;
+    background-color: #131313;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: 0.3s;
+  }
+  header .head .start-menu .logo-name .head-burger:before,
+header .head .start-menu .logo-name .head-burger:after {
+    content: "";
+    background-color: #131313;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: 0.3s;
+  }
+  header .head .start-menu .logo-name .head-burger:before {
+    top: 0;
+  }
+  header .head .start-menu .logo-name .head-burger:after {
+    bottom: 0;
+  }
+  header .head .start-menu .logo-name img {
+    display: none;
+  }
+  header .head .start-menu .logo-name h1 {
+    margin: 0 8px 0px 15px;
+    font-size: 20px;
+  }
+  header .head .start-menu .logo-name .btn-dots {
+    width: 25px;
+    height: 25px;
+  }
+  header .head .current-users .users li {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  header .head .current-users .users li img {
+    width: 25px;
+    height: 25px;
+  }
+  header .head .current-users .share {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  header .head .current-users .share .with-s {
+    display: none;
+  }
+  header .head .current-users .chat {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  header .head .current-users .chat .without-chat {
+    display: none;
+  }
+  header .menu {
+    margin: 18px 0 0 20px;
+  }
+  header .menu ul li {
+    margin-right: 18px;
+  }
+  header .menu ul li a {
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
+
+  .main-content {
+    padding: 20px 10px 80px 10px;
+  }
+  .main-content .content-block {
+    max-height: 900px;
+    margin-left: 0;
+    padding: 25px 20px 30px 20px;
+  }
+  .main-content .content-block .day {
+    margin-bottom: 22px;
+  }
+  .main-content .content-block .important-message {
+    max-height: 300px;
+    padding: 10px;
+    margin-left: 50px;
+  }
+  .main-content .content-block .message .message-content {
+    max-width: 500px;
+  }
+  .main-content .content-block .message .message-content p {
+    line-height: 18px;
+  }
+  .main-content .content-block .message-one {
+    margin-bottom: 25px;
+  }
+  .main-content .content-block .message-two {
+    margin-bottom: 15px;
+  }
+  .main-content .content-block .message-three {
+    margin-bottom: 15px;
+  }
+  .main-content .city-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+  }
+  .main-content .city-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 360px) {
+  header .head .start-menu .logo-name .head-burger {
+    margin-left: 0;
+  }
+  header .head .start-menu .logo-name img {
+    display: none;
+  }
+  header .head .start-menu .logo-name h1 {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  header .menu ul li {
+    margin-right: 10px;
+  }
+  header .menu ul li a {
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+}
